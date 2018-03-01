@@ -1,7 +1,2 @@
-install:
-	- pip install coveralls
+repo_token: Kknowd8iNjNtncFEIgSwkRHbW8JXqZZ4v
 
-script: coverage run --source cookiecutter rpn.py test_rpn.py
-
-after_success:
-	coveralls
