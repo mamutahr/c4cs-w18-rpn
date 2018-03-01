@@ -1,0 +1,7 @@
+install:
+	- pip install coveralls
+
+script: coverage run --source cookiecutter rpn.py test_rpn.py
+
+after_success:
+	coveralls
