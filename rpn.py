@@ -2,12 +2,9 @@
 
 import operator
 import logging
-import sys
 
-logger = logging.getLogger(__name__)
-#logger.setLevel(logging.DEBUG)
-sh = logging.StreamHandler(sys.stdout)
-logger.addHandler(sh)
+
+logging.basicConfig(level=logging.DEBUG)
 
 operators = {
 	'+': operator.add,
@@ -30,7 +27,7 @@ def calculate(arg):
 			arg1 = stack.pop()
 			result = function(arg1,arg2)
 			stack.append(result)
-		logger.debug(stack)
+		logging.debug(stack)
 
 	if len(stack) != 1:
 		raise TypeError
