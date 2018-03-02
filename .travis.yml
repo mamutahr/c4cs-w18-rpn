@@ -1,10 +1,12 @@
+repo_token: Kknowd8iNjNtncFEIgSwkRHbW8JXqZZ4v
 language: python
 python:
 	- "2.7"
 	- "3.3"
 	- "3.4"
 install:
-	pip install unittest2
-	pip install coveralls
+	sudo apt-get install gem
+	gem install rake
+	pip install .
 script: coverage run test_rpn.py
 after_success: coveralls
