@@ -1,7 +1,6 @@
 repo_token: Kknowd8iNjNtncFEIgSwkRHbW8JXqZZ4v
 language: python
 install:
-	apt install rake
 	pip install coveralls
 script:
 	coverage run test_rpn.py
