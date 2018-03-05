@@ -7,9 +7,3 @@ python:
 	- 3.5
 script:
 	- make test
-#install:
-#	sudo apt-get install gem
-#	gem install rake
-#	pip install .
-#script: coverage run test_rpn.py
-#after_success: coveralls
