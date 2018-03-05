@@ -1,8 +1,9 @@
 repo_token: Kknowd8iNjNtncFEIgSwkRHbW8JXqZZ4v
 language: python
 python:
-	- 2.7
-	- 3.3
-	- 3.4
+- 2.7
+- 3.3
+- 3.4
+- 3.5
 script:
-	- python3 -m unittest
+- python3 -m unittest
