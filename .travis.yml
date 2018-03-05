@@ -1,12 +1,15 @@
 repo_token: Kknowd8iNjNtncFEIgSwkRHbW8JXqZZ4v
 language: python
 python:
-	- "2.7"
-	- "3.3"
-	- "3.4"
-install:
-	sudo apt-get install gem
-	gem install rake
-	pip install .
-script: coverage run test_rpn.py
-after_success: coveralls
+	- 2.7
+	- 3.3
+	- 3.4
+	- 3.5
+script:
+	- make test
+#install:
+#	sudo apt-get install gem
+#	gem install rake
+#	pip install .
+#script: coverage run test_rpn.py
+#after_success: coveralls
